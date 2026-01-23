@@ -17,6 +17,47 @@ function toggleMenu() {
   }
 }
 
+function closeMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  
+  if (menu && icon) {
+    menu.classList.remove("open");
+    icon.classList.remove("open");
+  }
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+  const hamburgerNav = document.querySelector("#hamburger-nav");
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  
+  if (hamburgerNav && !hamburgerNav.contains(event.target)) {
+    if (menu && icon) {
+      menu.classList.remove("open");
+      icon.classList.remove("open");
+    }
+  }
+});
+
+// Close menu when window is resized to desktop size
+window.addEventListener("resize", function() {
+  const hamburgerNav = document.querySelector("#hamburger-nav");
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  
+  if (window.innerWidth > 1200) {
+    if (hamburgerNav) {
+      hamburgerNav.style.display = "none";
+    }
+    if (menu && icon) {
+      menu.classList.remove("open");
+      icon.classList.remove("open");
+    }
+  }
+});
+
 // =====================================================
 // SMOOTH SCROLLING FOR NAVIGATION LINKS
 // =====================================================
