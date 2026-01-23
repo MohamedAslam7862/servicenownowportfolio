@@ -35,6 +35,10 @@
     text-align: center;
   }
 
+  #profile .section__text__specialties {
+    text-align: center;
+  }
+
   .btn-container {
     justify-content: center;
   }
@@ -132,18 +136,7 @@
    ===================================================== */
 
 @media screen and (max-width: 600px) {
-  /* Navigation */
-  #hamburger-nav {
-    padding: 0.75rem 5%;
-  }
-
-  .logo {
-    font-size: 1.25rem;
-  }
-
-  .menu-links {
-    max-height: 400px;
-  }
+  
 
   /* Hero Section */
   #profile {
