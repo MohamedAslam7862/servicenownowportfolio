@@ -14,6 +14,7 @@
 
   #hamburger-nav {
     display: flex;
+    padding: 1rem 5%;
   }
 
   #profile {
@@ -26,6 +27,7 @@
   #profile .section__text {
     text-align: center;
     max-width: 600px;
+    margin: 0 auto;
   }
 
   #profile .section__text__p1,
@@ -75,26 +77,46 @@
 
   .about-card {
     padding: 1.5rem;
+    text-align: center;
+  }
+
+  .card-icon {
+    margin: 0 auto 1rem;
   }
 
   .about-text {
     padding: 1.5rem;
+    text-align: center;
   }
 
   .skill-category {
     padding: 1.25rem;
+    text-align: center;
   }
 
   .project-card {
     padding: 1.5rem;
+    text-align: center;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .contact-container {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .contact-card {
     padding: 1.25rem;
+    text-align: center;
+  }
+
+  .contact-icon {
+    margin: 0 auto 0.5rem;
   }
 }
 
@@ -112,42 +134,78 @@
     font-size: 1.25rem;
   }
 
+  .menu-links {
+    max-height: 400px;
+  }
+
   /* Hero Section */
   #profile {
     min-height: auto;
     padding: 6rem 5% 3rem;
+    gap: 2rem;
   }
 
   .profile-image-wrapper {
     width: 180px;
     height: 180px;
+    margin: 0 auto;
+  }
+
+  #profile .section__text {
+    width: 100%;
+  }
+
+  #profile .section__text__p1 {
+    text-align: center;
+    font-size: 1rem;
   }
 
   #profile .title {
     font-size: 2rem;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
   }
 
   .section__text__p2 {
     font-size: 1.1rem;
+    text-align: center;
   }
 
   .section__text__p3 {
     font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .section__text__specialties {
+    text-align: center;
+  }
+
+  .badges-container {
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.25rem;
   }
 
   .btn-container {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
     padding: 1rem;
+    font-size: 0.9rem;
   }
 
   #socials-container {
     gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .social-icon {
@@ -158,6 +216,7 @@
   /* Sections */
   section {
     padding: 4rem 5% 2rem;
+    margin: 0;
   }
 
   .section__text__p1 {
@@ -172,15 +231,19 @@
   /* About Section */
   .about-cards {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 100%;
   }
 
   .about-card {
     padding: 1.25rem;
+    text-align: center;
   }
 
   .card-icon {
     width: 56px;
     height: 56px;
+    margin: 0 auto 1rem;
   }
 
   .about-card h3 {
@@ -189,6 +252,8 @@
 
   .about-text {
     padding: 1.25rem;
+    text-align: center;
+    max-width: 100%;
   }
 
   .about-text p {
@@ -198,6 +263,44 @@
   /* Experience Section */
   .experience-sub-title {
     font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .company-timeline {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .company-card {
+    max-width: 100%;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .company-indicator {
+    justify-content: center;
+  }
+
+  .company-period {
+    white-space: normal;
+  }
+
+  .company-name {
+    font-size: 1.1rem;
+  }
+
+  .company-role {
+    font-size: 0.9rem;
+  }
+
+  .expertise-container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .skills-grid {
@@ -207,6 +310,7 @@
 
   .skill-category {
     padding: 1rem;
+    text-align: center;
   }
 
   .skill-category h3 {
@@ -222,26 +326,40 @@
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    max-width: 100%;
   }
 
   .project-card {
     padding: 1.25rem;
+    text-align: center;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
   }
 
   .project-card h3 {
     font-size: 1.1rem;
+    text-align: center;
   }
 
   .project-role {
     font-size: 0.85rem;
+    max-width: 100%;
   }
 
-  .project-list li {
-    font-size: 0.85rem;
+  .cert-card {
+    padding: 1.25rem;
+    text-align: center;
   }
 
-  /* Certifications Section */
-  .certifications-grid {
+  .cert-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 0.75rems-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
@@ -252,15 +370,19 @@
 
   .cert-icon {
     width: 56px;
-    height: 56px;
+    gap: 1rem;
+    max-width: 100%;
   }
 
-  .cert-card h3 {
-    font-size: 0.95rem;
+  .contact-card {
+    padding: 1rem;
+    text-align: center;
   }
 
-  .cert-card p {
-    font-size: 0.8rem;
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.75rem.8rem;
   }
 
   /* Contact Section */
@@ -312,10 +434,17 @@
   .profile-image-wrapper {
     width: 150px;
     height: 150px;
+    margin: 0 auto;
   }
 
   #profile .title {
     font-size: 1.75rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  #profile {
+    padding: 5rem 5% 2rem;
   }
 
   .certifications-grid {
@@ -328,8 +457,18 @@
 
   .project-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.5rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.875rem 1rem;
   }
 }
 
