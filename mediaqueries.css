@@ -61,7 +61,8 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1.5rem, 2.5vw, 2.5rem);
   }
 
   .certifications-grid {
@@ -74,60 +75,481 @@
    ===================================================== */
 
 @media screen and (max-width: 900px) {
+  section {
+    padding: clamp(3rem, 5vw, 4rem) clamp(4%, 5%, 6%) clamp(2rem, 4vw, 3rem);
+  }
+
+  #profile {
+    padding: clamp(5rem, 6vw, 6rem) clamp(4%, 5%, 6%) clamp(2rem, 4vw, 3rem);
+    gap: clamp(2rem, 4vw, 3rem);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profile .section__text {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #profile .section__text__p1,
+  #profile .title,
+  #profile .section__text__specialties,
+  #profile .section__text__p2,
+  #profile .section__text__p3 {
+    text-align: center;
+  }
+
+  .profile-image-wrapper {
+    width: clamp(200px, 40vw, 250px);
+    height: clamp(200px, 40vw, 250px);
+    margin: 0 auto;
+  }
+
+  .badges-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .btn-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 1.5vw, 1rem);
+    margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  #socials-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 1vw, 1rem);
+  }
+
   .about-cards {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    max-width: 100%;
+    margin: 0 auto clamp(2rem, 3vw, 3rem);
   }
 
   .about-card {
-    padding: 1.5rem;
+    padding: clamp(1.25rem, 2vw, 1.5rem);
     text-align: center;
   }
 
   .card-icon {
-    margin: 0 auto 1rem;
+    margin: 0 auto clamp(0.75rem, 1.5vw, 1rem);
+    width: clamp(32px, 6vw, 40px);
+    height: clamp(32px, 6vw, 40px);
   }
 
   .about-text {
-    padding: 1.5rem;
+    padding: clamp(1.5rem, 2vw, 2rem);
     text-align: center;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.6;
   }
 
   .skill-category {
-    padding: 1.25rem;
+    padding: clamp(1rem, 2vw, 1.25rem);
     text-align: center;
   }
 
   .project-card {
-    padding: 1.5rem;
+    padding: clamp(1.5rem, 2vw, 2rem);
     text-align: center;
+  }
+
+  .project-card-simple {
+    padding: clamp(1.5rem, 2vw, 2rem);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1.2rem, 2vw, 1.8rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    max-width: 100%;
   }
 
   .project-header {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(0.5rem, 1vw, 1rem);
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    max-width: 100%;
+  }
+
+  .cert-card {
+    padding: clamp(1.25rem, 2vw, 1.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+  }
+
+  .cert-icon {
+    width: clamp(50px, 8vw, 60px);
+    height: clamp(50px, 8vw, 60px);
+    margin: 0 auto clamp(0.75rem, 1.5vw, 1rem);
+  }
+
+  .cert-label {
+    font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+    margin: clamp(0.5rem, 1vw, 0.75rem) 0 clamp(0.3rem, 0.75vw, 0.4rem);
+  }
+
+  .cert-card h3 {
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    margin-bottom: clamp(0.3rem, 0.75vw, 0.4rem);
+  }
+
+  .cert-description {
+    font-size: clamp(0.75rem, 1.4vw, 0.85rem);
+    margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+    flex-grow: 1;
+  }
+
+  .view-btn {
+    font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+    padding: clamp(0.5rem, 1vw, 0.6rem) clamp(0.75rem, 1.5vw, 1rem);
   }
 
   .contact-container {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 1.5rem;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding: clamp(1rem, 2vw, 1.5rem);
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
   }
 
   .contact-card {
-    padding: 0;
+    padding: clamp(0.75rem, 1.5vw, 1rem);
     text-align: left;
     flex-direction: row;
-    gap: 0.75rem;
+    gap: clamp(0.5rem, 1vw, 0.75rem);
   }
 
   .contact-icon {
     margin: 0;
-    min-width: 40px;
+    min-width: clamp(36px, 7vw, 40px);
+    width: clamp(36px, 7vw, 40px);
+    height: clamp(36px, 7vw, 40px);
+  }
+
+  .contact-info h3 {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  }
+
+  .contact-info a {
+    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+  }
+}
+
+/* =====================================================
+   MOBILE (max-width: 600px)
+   ===================================================== */
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: clamp(2.5rem, 4vw, 3.5rem) clamp(4%, 5%, 6%) clamp(1.5rem, 3vw, 2.5rem);
+    min-height: auto;
+  }
+
+  #profile {
+    padding: clamp(4.5rem, 5vw, 5.5rem) clamp(4%, 5%, 6%) clamp(1.5rem, 3vw, 2.5rem);
+    gap: clamp(1.5rem, 3vw, 2rem);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profile .section__text {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 clamp(1%, 2%, 3%);
+    box-sizing: border-box;
+  }
+
+  #profile .section__text__p1 {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    text-align: center;
+    margin-bottom: clamp(0.3rem, 0.5vw, 0.5rem);
+  }
+
+  #profile .title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    text-align: center;
+    margin-bottom: clamp(0.3rem, 0.5vw, 0.5rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+  }
+
+  #profile .section__text__p2 {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: clamp(0.2rem, 0.5vw, 0.3rem);
+    text-align: center;
+  }
+
+  #profile .section__text__specialties {
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+    text-align: center;
+    margin: clamp(0.5rem, 1vw, 0.75rem) 0;
+  }
+
+  #profile .section__text__p3 {
+    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+    text-align: center;
+    line-height: 1.5;
+    margin: clamp(0.5rem, 1vw, 0.75rem) 0;
+  }
+
+  .profile-image-wrapper {
+    width: clamp(160px, 35vw, 200px);
+    height: clamp(160px, 35vw, 200px);
+    margin: 0 auto;
+    padding: 2px;
+  }
+
+  .badges-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.4rem, 1vw, 0.6rem);
+    margin-bottom: clamp(0.8rem, 1.5vw, 1.2rem);
+    padding: 0 clamp(2%, 3%, 4%);
+  }
+
+  .badge {
+    font-size: clamp(0.6rem, 1.2vw, 0.7rem);
+    padding: clamp(0.25rem, 0.5vw, 0.3rem) clamp(0.5rem, 1vw, 0.6rem);
+    white-space: nowrap;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 1.2vw, 0.8rem);
+    margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
+    padding: 0 clamp(2%, 3%, 4%);
+  }
+
+  .btn {
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    padding: clamp(0.6rem, 1.2vw, 0.75rem) clamp(0.75rem, 1.5vw, 1rem);
+    white-space: nowrap;
+    flex: 0 1 auto;
+    min-height: clamp(36px, 8vw, 44px);
+  }
+
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+    margin-top: clamp(0.75rem, 1.5vw, 1rem);
+  }
+
+  .social-icon {
+    width: clamp(40px, 9vw, 48px);
+    height: clamp(40px, 9vw, 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 1.25rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    max-width: 100%;
+    margin: 0 auto clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  .about-card {
+    padding: clamp(1rem, 1.8vw, 1.25rem);
+    text-align: center;
+  }
+
+  .about-card h3 {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    margin-bottom: clamp(0.4rem, 0.8vw, 0.5rem);
+  }
+
+  .about-card p {
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    line-height: 1.5;
+  }
+
+  .card-icon {
+    margin: 0 auto clamp(0.6rem, 1.2vw, 0.75rem);
+    width: clamp(28px, 5vw, 32px);
+    height: clamp(28px, 5vw, 32px);
+  }
+
+  .about-text {
+    padding: clamp(1rem, 1.8vw, 1.25rem);
+    text-align: center;
+    font-size: clamp(0.8rem, 1.6vw, 0.9rem);
+    line-height: 1.6;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(0.75rem, 1.5vw, 1rem);
+    padding: 0 clamp(3%, 4%, 5%);
+  }
+
+  .expertise-item {
+    padding: clamp(0.75rem, 1.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  }
+
+  .check-icon {
+    width: clamp(16px, 3vw, 18px);
+    height: clamp(16px, 3vw, 18px);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    max-width: 100%;
+  }
+
+  .project-card-simple {
+    padding: clamp(1.25rem, 2vw, 1.5rem);
+  }
+
+  .project-card-simple h3 {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+  }
+
+  .project-card-simple p {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  }
+
+  .project-badge {
+    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+    padding: clamp(0.3rem, 0.5vw, 0.4rem) clamp(0.5rem, 1vw, 0.6rem);
+  }
+
+  .know-more-btn {
+    font-size: clamp(0.75rem, 1.4vw, 0.85rem);
+    padding: clamp(0.5rem, 1vw, 0.6rem) clamp(0.75rem, 1.5vw, 0.9rem);
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 1.25rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    max-width: 100%;
+    margin-bottom: clamp(1.5rem, 2vw, 2rem);
+  }
+
+  .cert-card {
+    padding: clamp(1rem, 1.8vw, 1.25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+  }
+
+  .cert-icon {
+    width: clamp(48px, 10vw, 56px);
+    height: clamp(48px, 10vw, 56px);
+    margin: 0 auto clamp(0.75rem, 1.2vw, 1rem);
+    flex-shrink: 0;
+  }
+
+  .cert-label {
+    font-size: clamp(0.6rem, 1.2vw, 0.65rem);
+    margin: clamp(0.5rem, 0.8vw, 0.7rem) 0 clamp(0.3rem, 0.5vw, 0.35rem);
+  }
+
+  .cert-card h3 {
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    margin-bottom: clamp(0.3rem, 0.5vw, 0.35rem);
+  }
+
+  .cert-description {
+    font-size: clamp(0.75rem, 1.3vw, 0.8rem);
+    margin-bottom: clamp(0.6rem, 1vw, 0.8rem);
+    flex-grow: 1;
+    line-height: 1.4;
+  }
+
+  .view-btn {
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+    padding: clamp(0.4rem, 0.8vw, 0.5rem) clamp(0.6rem, 1.2vw, 0.8rem);
+  }
+
+  .micro-cert-badges {
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+    padding: 0 clamp(3%, 4%, 5%);
+  }
+
+  .micro-badge {
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+    padding: clamp(0.4rem, 0.8vw, 0.5rem) clamp(0.6rem, 1.2vw, 0.8rem);
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 1.25rem);
+    padding: clamp(1rem, 1.5vw, 1.25rem);
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-card {
+    padding: clamp(0.75rem, 1.5vw, 1rem);
+    text-align: left;
+    flex-direction: row;
+    gap: clamp(0.6rem, 1.2vw, 0.75rem);
+  }
+
+  .contact-icon {
+    margin: 0;
+    min-width: clamp(32px, 6vw, 36px);
+    width: clamp(32px, 6vw, 36px);
+    height: clamp(32px, 6vw, 36px);
+    flex-shrink: 0;
+  }
+
+  .contact-info h3 {
+    font-size: clamp(0.75rem, 1.3vw, 0.85rem);
+    margin-bottom: clamp(0.2rem, 0.4vw, 0.3rem);
+  }
+
+  .contact-info a {
+    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
+    word-break: break-word;
+  }
+
+  #contact {
+    padding: clamp(2.5rem, 4vw, 3.5rem) clamp(4%, 5%, 6%) clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  .micro-certifications {
+    padding: 0 clamp(3%, 4%, 5%);
+  }
+
+  .cert-section-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
   }
 }
 
@@ -137,72 +559,248 @@
    ===================================================== */
 
 @media screen and (max-width: 400px) {
-  .profile-image-wrapper {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-  }
-
-  #profile .title {
-    font-size: 1.75rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+  section {
+    padding: clamp(2rem, 3.5vw, 2.5rem) clamp(4%, 5%, 6%) clamp(1.25rem, 2.5vw, 1.75rem);
+    min-height: auto;
   }
 
   #profile {
-    padding: 5rem 5% 2rem;
+    padding: clamp(4rem, 4.5vw, 4.5rem) clamp(4%, 5%, 6%) clamp(1.25rem, 2.5vw, 1.75rem);
+    gap: clamp(1.25rem, 2.5vw, 1.5rem);
+    flex-direction: column;
+  }
+
+  #profile .section__text {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #profile .section__text__p1 {
+    font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+  }
+
+  #profile .title {
+    font-size: clamp(1.6rem, 4vw, 1.9rem);
+    margin-bottom: clamp(0.2rem, 0.4vw, 0.3rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.15;
+  }
+
+  #profile .section__text__p2 {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    margin-bottom: clamp(0.15rem, 0.3vw, 0.25rem);
+  }
+
+  #profile .section__text__specialties {
+    font-size: clamp(0.75rem, 1.6vw, 0.85rem);
+    margin: clamp(0.4rem, 0.8vw, 0.5rem) 0;
+  }
+
+  #profile .section__text__p3 {
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    margin: clamp(0.4rem, 0.8vw, 0.5rem) 0;
+  }
+
+  .profile-image-wrapper {
+    width: clamp(140px, 32vw, 160px);
+    height: clamp(140px, 32vw, 160px);
+    margin: 0 auto;
+    padding: 2px;
+  }
+
+  .badges-container {
+    gap: clamp(0.3rem, 0.8vw, 0.5rem);
+    margin-bottom: clamp(0.6rem, 1.2vw, 0.8rem);
+    padding: 0 clamp(2%, 3%, 4%);
+    justify-content: center;
+  }
+
+  .badge {
+    font-size: clamp(0.55rem, 1rem, 0.65rem);
+    padding: clamp(0.2rem, 0.4vw, 0.25rem) clamp(0.4rem, 0.8vw, 0.5rem);
+  }
+
+  .btn-container {
+    gap: clamp(0.4rem, 0.8vw, 0.6rem);
+    margin-bottom: clamp(0.75rem, 1.2vw, 1rem);
+    padding: 0 clamp(2%, 3%, 4%);
+  }
+
+  .btn {
+    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+    padding: clamp(0.5rem, 0.8vw, 0.6rem) clamp(0.65rem, 1.2vw, 0.75rem);
+  }
+
+  #socials-container {
+    gap: clamp(0.4rem, 0.8vw, 0.6rem);
+    margin-top: clamp(0.5rem, 1vw, 0.75rem);
+  }
+
+  .social-icon {
+    width: clamp(36px, 8vw, 40px);
+    height: clamp(36px, 8vw, 40px);
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 1.5vw, 1rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    margin: 0 auto clamp(1.25rem, 2vw, 1.5rem);
+  }
+
+  .about-card {
+    padding: clamp(0.8rem, 1.5vw, 1rem);
+  }
+
+  .about-card h3 {
+    font-size: clamp(0.85rem, 1.6vw, 0.95rem);
+  }
+
+  .about-card p {
+    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+  }
+
+  .card-icon {
+    margin: 0 auto clamp(0.5rem, 0.8vw, 0.6rem);
+    width: clamp(24px, 4vw, 28px);
+    height: clamp(24px, 4vw, 28px);
+  }
+
+  .about-text {
+    padding: clamp(0.8rem, 1.5vw, 1rem);
+    font-size: clamp(0.75rem, 1.3vw, 0.8rem);
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(0.6rem, 1.2vw, 0.8rem);
+    padding: 0 clamp(3%, 4%, 5%);
+  }
+
+  .expertise-item {
+    padding: clamp(0.6rem, 1vw, 0.75rem);
+    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+  }
+
+  .check-icon {
+    width: clamp(14px, 2.5vw, 16px);
+    height: clamp(14px, 2.5vw, 16px);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 1.5vw, 1rem);
+    padding: 0 clamp(3%, 4%, 5%);
+  }
+
+  .project-card-simple {
+    padding: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  .project-card-simple h3 {
+    font-size: clamp(0.9rem, 1.6vw, 1rem);
+  }
+
+  .project-card-simple p {
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+  }
+
+  .project-badge {
+    font-size: clamp(0.6rem, 1rem, 0.7rem);
+    padding: clamp(0.25rem, 0.4vw, 0.3rem) clamp(0.4rem, 0.8vw, 0.5rem);
+  }
+
+  .know-more-btn {
+    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
+    padding: clamp(0.4rem, 0.7vw, 0.5rem) clamp(0.6rem, 1vw, 0.75rem);
   }
 
   .certifications-grid {
     grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 1.5vw, 1rem);
+    padding: 0 clamp(3%, 4%, 5%);
+    margin-bottom: clamp(1rem, 1.5vw, 1.25rem);
   }
 
   .cert-card {
-    padding: 1rem;
+    padding: clamp(0.85rem, 1.5vw, 1rem);
   }
 
-  .project-header {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+  .cert-icon {
+    width: clamp(44px, 9vw, 50px);
+    height: clamp(44px, 9vw, 50px);
+    margin: 0 auto clamp(0.6rem, 1vw, 0.8rem);
   }
 
-  .badge {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+  .cert-label {
+    font-size: clamp(0.55rem, 1vw, 0.6rem);
+    margin: clamp(0.4rem, 0.6vw, 0.5rem) 0 clamp(0.25rem, 0.4vw, 0.3rem);
   }
 
-  .btn {
-    font-size: 0.85rem;
-    padding: 0.875rem 1rem;
+  .cert-card h3 {
+    font-size: clamp(0.9rem, 1.6vw, 1rem);
   }
 
-  /* Contact Section Extra Small */
+  .cert-description {
+    font-size: clamp(0.7rem, 1.2vw, 0.75rem);
+    margin-bottom: clamp(0.5rem, 0.8vw, 0.6rem);
+  }
+
+  .view-btn {
+    font-size: clamp(0.65rem, 1rem, 0.75rem);
+    padding: clamp(0.35rem, 0.6vw, 0.4rem) clamp(0.55rem, 1vw, 0.65rem);
+  }
+
+  .micro-certifications {
+    padding: 0 clamp(3%, 4%, 5%);
+  }
+
+  .micro-cert-badges {
+    gap: clamp(0.4rem, 0.8vw, 0.6rem);
+    padding: 0 clamp(2%, 3%, 4%);
+  }
+
+  .micro-badge {
+    font-size: clamp(0.6rem, 1rem, 0.7rem);
+    padding: clamp(0.3rem, 0.6vw, 0.4rem) clamp(0.5rem, 1vw, 0.6rem);
+  }
+
   #contact {
-    padding: 3rem 5% 2rem;
+    padding: clamp(2rem, 3.5vw, 2.5rem) clamp(4%, 5%, 6%) clamp(1.25rem, 2vw, 1.5rem);
   }
 
   .contact-container {
-    padding: 1rem;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 1.5vw, 1rem);
+    padding: clamp(0.75rem, 1.2vw, 1rem);
   }
 
   .contact-card {
-    gap: 0.6rem;
+    padding: clamp(0.6rem, 1vw, 0.75rem);
+    gap: clamp(0.5rem, 0.8vw, 0.6rem);
   }
 
   .contact-icon {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
+    width: clamp(28px, 5vw, 32px);
+    height: clamp(28px, 5vw, 32px);
+    min-width: clamp(28px, 5vw, 32px);
+    flex-shrink: 0;
   }
 
   .contact-info h3 {
-    font-size: 0.75rem;
+    font-size: clamp(0.65rem, 1.1vw, 0.75rem);
   }
 
   .contact-info a {
-    font-size: 0.75rem;
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+    word-break: break-word;
+  }
+
+  .cert-section-title {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+    margin-bottom: clamp(0.8rem, 1.5vw, 1rem);
   }
 }
 
