@@ -108,17 +108,22 @@
   .contact-container {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding: 1.5rem;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .contact-card {
     padding: 0;
     text-align: left;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .contact-icon {
     margin: 0;
+    min-width: 40px;
   }
 }
 
@@ -361,19 +366,12 @@
   .cert-icon {
     width: 56px;
     height: 56px;
-    margin: 0 auto 0.75rems-grid {
+    margin: 0 auto 0.75rem;
+  }
+
+  .certifications-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-  }
-
-  .cert-card {
-    padding: 1.25rem;
-  }
-
-  .cert-icon {
-    width: 56px;
-    gap: 1rem;
-    max-width: 100%;
   }
 
   .contact-card {
@@ -384,39 +382,48 @@
   .contact-icon {
     width: 48px;
     height: 48px;
-    margin: 0 auto 0.75rem.8rem;
+    margin: 0 auto 0.75rem;
   }
 
-  /* Contact Section */
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
     padding: 1.5rem;
     width: 100%;
     margin: 0;
+    max-width: 100%;
   }
 
   .contact-card {
     padding: 0;
     text-align: left;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.75rem;
     align-items: flex-start;
+    min-width: 0;
   }
 
   .contact-icon {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
     margin: 0;
     flex-shrink: 0;
   }
 
+  .contact-info {
+    flex: 1;
+    min-width: 0;
+  }
+
   .contact-info h3 {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.15rem;
   }
 
   .contact-info a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    word-break: break-word;
   }
 
   /* Footer */
@@ -481,6 +488,34 @@
   .btn {
     font-size: 0.85rem;
     padding: 0.875rem 1rem;
+  }
+
+  /* Contact Section Extra Small */
+  #contact {
+    padding: 3rem 5% 2rem;
+  }
+
+  .contact-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .contact-card {
+    gap: 0.6rem;
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+  }
+
+  .contact-info h3 {
+    font-size: 0.75rem;
+  }
+
+  .contact-info a {
+    font-size: 0.75rem;
   }
 }
 
