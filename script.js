@@ -44,16 +44,33 @@ document.addEventListener("click", function(event) {
 // Close menu when window is resized to desktop size
 window.addEventListener("resize", function() {
   const hamburgerNav = document.querySelector("#hamburger-nav");
+  const desktopNav = document.querySelector("#desktop-nav");
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
   
+  // If screen is larger than 1200px (desktop view)
   if (window.innerWidth > 1200) {
+    // Show desktop nav
+    if (desktopNav) {
+      desktopNav.style.display = "flex";
+    }
+    // Hide hamburger nav and close menu
     if (hamburgerNav) {
       hamburgerNav.style.display = "none";
     }
+    // Reset menu state
     if (menu && icon) {
       menu.classList.remove("open");
       icon.classList.remove("open");
+    }
+  } else {
+    // Show hamburger nav on smaller screens
+    if (hamburgerNav) {
+      hamburgerNav.style.display = "flex";
+    }
+    // Hide desktop nav on smaller screens
+    if (desktopNav) {
+      desktopNav.style.display = "none";
     }
   }
 });
