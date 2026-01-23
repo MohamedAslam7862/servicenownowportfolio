@@ -111,12 +111,14 @@
   }
 
   .contact-card {
-    padding: 1.25rem;
-    text-align: center;
+    padding: 0;
+    text-align: left;
+    flex-direction: row;
+    gap: 1rem;
   }
 
   .contact-icon {
-    margin: 0 auto 0.5rem;
+    margin: 0;
   }
 }
 
@@ -388,19 +390,29 @@
   /* Contact Section */
   .contact-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0;
   }
 
   .contact-card {
-    padding: 1rem;
+    padding: 0;
+    text-align: left;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
   }
 
   .contact-icon {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    flex-shrink: 0;
   }
 
   .contact-info h3 {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .contact-info a {
