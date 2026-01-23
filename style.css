@@ -1185,6 +1185,12 @@ section {
   background: var(--background);
   min-height: auto;
   padding: 6rem 5%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-container {
@@ -1199,13 +1205,14 @@ section {
   border-radius: var(--radius-lg);
   padding: 3rem;
   align-items: start;
+  box-sizing: border-box;
 }
 
 .contact-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
   background: transparent;
   border: none;
   border-radius: 0;
@@ -1213,6 +1220,7 @@ section {
   transition: all 0.3s ease;
   text-align: left;
   justify-content: flex-start;
+  min-width: 0;
 }
 
 .contact-card:hover {
@@ -1226,11 +1234,18 @@ section {
   align-items: center;
   justify-content: center;
   width: 48px;
-  height: 48px;
+  min-width: 48px;
   border-radius: 50%;
   background: hsla(160, 40%, 50%, 0.2);
   color: var(--primary);
   flex-shrink: 0;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-info h3 {
@@ -1239,12 +1254,16 @@ section {
   font-weight: 500;
   margin-bottom: 0.25rem;
   text-transform: capitalize;
+  word-break: break-word;
 }
 
 .contact-info a {
   display: block;
   color: var(--foreground);
   font-size: 0.95rem;
+  font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: break-wordem;
   font-weight: 600;
 }
 
