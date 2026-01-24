@@ -269,7 +269,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  padding-top: 8rem;
+  padding-top: 4rem;
   overflow: hidden;
   background: var(--background);
 }
