@@ -56,22 +56,32 @@
 
 @media screen and (max-width: 600px) {
   section {
-    padding: 2rem 5% 1.5rem !important;
+    padding: 2rem 0 1.5rem !important;
+    margin: 0 !important;
   }
   #about,
   #certifications,
-  #experience {
-    padding: 2rem 5% 1.5rem !important;
+  #experience,
+  #profile,
+  #contact {
+    padding: 2rem 0 1.5rem !important;
+    margin: 0 !important;
   }
-  #contact,
-  footer {
-    height: fit-content;
+  #about > *,
+  #certifications > *,
+  #experience > *,
+  #contact > * {
+    padding: 0 5%;
   }
-  #profile {
-    height: fit-content;
-    margin-bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .about-container {
+    padding: 0 5%;
+  }
+  .cert-section-title {
+    padding: 0 5%;
+  }
+  .certifications-grid,
+  .about-cards {
+    padding: 0 5%;
   }
   /* About Cards - Stack on mobile */
   .about-cards {
@@ -89,7 +99,7 @@
   }
   .about-text {
     padding: 1.5rem;
-    margin-top: 1rem;
+    margin: 1rem 5% 0;
   }
   /* Certifications Grid - Stack on mobile */
   .certifications-grid {
@@ -115,7 +125,7 @@
     margin-bottom: 1rem;
   }
   .micro-certifications {
-    margin: 2rem auto 0;
+    margin: 2rem 5% 0;
     padding: 1.5rem;
   }
   article {
@@ -134,12 +144,13 @@
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1.5rem;
+    margin: 0 5%;
   }
   .contact-info-container {
     margin: 0;
   }
   .message-form {
-    margin: 1.5rem auto 0;
+    margin: 1.5rem 5% 0;
     padding: 1rem;
   }
   .form-wrapper {
