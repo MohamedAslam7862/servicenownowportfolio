@@ -1,1008 +1,135 @@
-/* =====================================================
-   SERVICENOW PORTFOLIO - MEDIA QUERIES
-   Responsive Design Breakpoints
-   ===================================================== */
-
-/* =====================================================
-   TABLET & BELOW (max-width: 1200px)
-   ===================================================== */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
-
   #hamburger-nav {
     display: flex;
-    padding: 1rem 5%;
   }
-
-  #profile {
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 7rem;
-    text-align: center;
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
   }
-
-  #profile .section__text {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+  #profile,
+  .section-container {
+    display: block;
   }
-
-  #profile .section__text__p1,
-  #profile .title {
-    text-align: center;
+  .arrow {
+    display: none;
   }
-
-  #profile .section__text__specialties {
-    text-align: center;
+  section,
+  .section-container {
+    height: fit-content;
   }
-
-  .btn-container {
-    justify-content: center;
-  }
-
-  #socials-container {
-    justify-content: center;
-  }
-
-  .profile-image-wrapper {
-    width: 240px;
-    height: 240px;
-  }
-
   section {
-    padding: 5rem 5% 3rem;
+    margin: 0 5%;
   }
-
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
   }
-
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(1.5rem, 2.5vw, 2.5rem);
-  }
-
-  .certifications-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  .about-containers {
+    margin-top: 0;
   }
 }
 
-/* =====================================================
-   SMALL TABLET (max-width: 900px)
-   ===================================================== */
 
-@media screen and (max-width: 900px) {
-  section {
-    padding: clamp(3rem, 5vw, 4rem) clamp(4%, 5%, 6%) clamp(2rem, 4vw, 3rem);
-  }
-
-  #profile {
-    padding: clamp(5rem, 6vw, 6rem) clamp(4%, 5%, 6%) clamp(2rem, 4vw, 3rem);
-    gap: clamp(2rem, 4vw, 3rem);
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #profile .section__text {
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  #profile .section__text__p1,
-  #profile .title,
-  #profile .section__text__specialties,
-  #profile .section__text__p2,
-  #profile .section__text__p3 {
-    text-align: center;
-  }
-
-  .profile-image-wrapper {
-    width: clamp(200px, 40vw, 250px);
-    height: clamp(200px, 40vw, 250px);
-    margin: 0 auto;
-  }
-
-  .badges-container {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(0.5rem, 1vw, 0.75rem);
-    margin-bottom: clamp(1rem, 2vw, 1.5rem);
-  }
-
-  .btn-container {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(0.75rem, 1.5vw, 1rem);
-    margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
-  }
-
-  #socials-container {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(0.75rem, 1vw, 1rem);
-  }
-
-  .about-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(1rem, 2vw, 1.5rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    max-width: 100%;
-    margin: 0 auto clamp(2rem, 3vw, 3rem);
-  }
-
-  .about-card {
-    padding: clamp(1.25rem, 2vw, 1.5rem);
-    text-align: center;
-  }
-
-  .card-icon {
-    margin: 0 auto clamp(0.75rem, 1.5vw, 1rem);
-    width: clamp(32px, 6vw, 40px);
-    height: clamp(32px, 6vw, 40px);
-  }
-
-  .about-text {
-    padding: clamp(1.5rem, 2vw, 2rem);
-    text-align: center;
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    line-height: 1.6;
-  }
-
-  .skill-category {
-    padding: clamp(1rem, 2vw, 1.25rem);
-    text-align: center;
-  }
-
-  .project-card {
-    padding: clamp(1.5rem, 2vw, 2rem);
-    text-align: center;
-  }
-
-  .project-card-simple {
-    padding: clamp(1.5rem, 2vw, 2rem);
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(1.2rem, 2vw, 1.8rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    max-width: 100%;
-  }
-
-  .project-header {
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(0.5rem, 1vw, 1rem);
-  }
-
-  .certifications-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(1rem, 2vw, 1.5rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    max-width: 100%;
-  }
-
-  .cert-card {
-    padding: clamp(1.25rem, 2vw, 1.5rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-  }
-
-  .cert-icon {
-    width: clamp(50px, 8vw, 60px);
-    height: clamp(50px, 8vw, 60px);
-    margin: 0 auto clamp(0.75rem, 1.5vw, 1rem);
-  }
-
-  .cert-label {
-    font-size: clamp(0.6rem, 1.5vw, 0.7rem);
-    margin: clamp(0.5rem, 1vw, 0.75rem) 0 clamp(0.3rem, 0.75vw, 0.4rem);
-  }
-
-  .cert-card h3 {
-    font-size: clamp(1rem, 1.8vw, 1.1rem);
-    margin-bottom: clamp(0.3rem, 0.75vw, 0.4rem);
-  }
-
-  .cert-description {
-    font-size: clamp(0.75rem, 1.4vw, 0.85rem);
-    margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
-    flex-grow: 1;
-  }
-
-  .view-btn {
-    font-size: clamp(0.75rem, 1.2vw, 0.85rem);
-    padding: clamp(0.5rem, 1vw, 0.6rem) clamp(0.75rem, 1.5vw, 1rem);
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    padding: clamp(1rem, 2vw, 1.5rem);
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .contact-card {
-    padding: clamp(0.75rem, 1.5vw, 1rem);
-    text-align: left;
-    flex-direction: row;
-    gap: clamp(0.5rem, 1vw, 0.75rem);
-  }
-
-  .contact-icon {
-    margin: 0;
-    min-width: clamp(36px, 7vw, 40px);
-    width: clamp(36px, 7vw, 40px);
-    height: clamp(36px, 7vw, 40px);
-  }
-
-  .contact-info h3 {
-    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
-  }
-
-  .contact-info a {
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
-  }
-}
-
-/* =====================================================
-   MOBILE (max-width: 600px)
-   ===================================================== */
 
 @media screen and (max-width: 600px) {
-  section {
-    padding: clamp(2.5rem, 4vw, 3.5rem) clamp(4%, 5%, 6%) clamp(1.5rem, 3vw, 2.5rem);
-    min-height: auto;
+  #contact,
+  footer {
+    height: 40vh;
   }
-
   #profile {
-    padding: clamp(4.5rem, 5vw, 5.5rem) clamp(4%, 5%, 6%) clamp(1.5rem, 3vw, 2.5rem);
-    gap: clamp(1.5rem, 3vw, 2rem);
-    flex-direction: column;
-    text-align: center;
+    height: 83vh;
+    margin-bottom: 0;
   }
-
-  #profile .section__text {
-    text-align: center;
-    max-width: 100%;
-    width: 100%;
-    padding: 0 clamp(1%, 2%, 3%);
-    box-sizing: border-box;
+  article {
+    font-size: 1rem;
   }
-
-  #profile .section__text__p1 {
-    font-size: clamp(0.85rem, 2vw, 1rem);
-    text-align: center;
-    margin-bottom: clamp(0.3rem, 0.5vw, 0.5rem);
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
   }
-
-  #profile .title {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-    text-align: center;
-    margin-bottom: clamp(0.3rem, 0.5vw, 0.5rem);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.2;
-  }
-
-  #profile .section__text__p2 {
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
-    margin-bottom: clamp(0.2rem, 0.5vw, 0.3rem);
-    text-align: center;
-  }
-
-  #profile .section__text__specialties {
-    font-size: clamp(0.8rem, 2vw, 0.95rem);
-    text-align: center;
-    margin: clamp(0.5rem, 1vw, 0.75rem) 0;
-  }
-
-  #profile .section__text__p3 {
-    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
-    text-align: center;
-    line-height: 1.5;
-    margin: clamp(0.5rem, 1vw, 0.75rem) 0;
-  }
-
-  .profile-image-wrapper {
-    width: clamp(160px, 35vw, 200px);
-    height: clamp(160px, 35vw, 200px);
-    margin: 0 auto;
-    padding: 2px;
-  }
-
-  .badges-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(0.4rem, 1vw, 0.6rem);
-    margin-bottom: clamp(0.8rem, 1.5vw, 1.2rem);
-    padding: 0 clamp(2%, 3%, 4%);
-  }
-
-  .badge {
-    font-size: clamp(0.6rem, 1.2vw, 0.7rem);
-    padding: clamp(0.25rem, 0.5vw, 0.3rem) clamp(0.5rem, 1vw, 0.6rem);
-    white-space: nowrap;
-  }
-
+  .about-containers,
+  .contact-info-upper-container,
   .btn-container {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: clamp(0.5rem, 1.2vw, 0.8rem);
-    margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
-    padding: 0 clamp(2%, 3%, 4%);
   }
-
-  .btn {
-    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
-    padding: clamp(0.6rem, 1.2vw, 0.75rem) clamp(0.75rem, 1.5vw, 1rem);
-    white-space: nowrap;
-    flex: 0 1 auto;
-    min-height: clamp(36px, 8vw, 44px);
-  }
-
-  #socials-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(0.5rem, 1vw, 0.75rem);
-    margin-top: clamp(0.75rem, 1.5vw, 1rem);
-  }
-
-  .social-icon {
-    width: clamp(40px, 9vw, 48px);
-    height: clamp(40px, 9vw, 48px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-cards {
-    grid-template-columns: 1fr;
-    gap: clamp(1rem, 2vw, 1.25rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    max-width: 100%;
-    margin: 0 auto clamp(1.5rem, 2.5vw, 2rem);
-  }
-
-  .about-card {
-    padding: clamp(1rem, 1.8vw, 1.25rem);
-    text-align: center;
-  }
-
-  .about-card h3 {
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
-    margin-bottom: clamp(0.4rem, 0.8vw, 0.5rem);
-  }
-
-  .about-card p {
-    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
-    line-height: 1.5;
-  }
-
-  .card-icon {
-    margin: 0 auto clamp(0.6rem, 1.2vw, 0.75rem);
-    width: clamp(28px, 5vw, 32px);
-    height: clamp(28px, 5vw, 32px);
-  }
-
-  .about-text {
-    padding: clamp(1rem, 1.8vw, 1.25rem);
-    text-align: center;
-    font-size: clamp(0.8rem, 1.6vw, 0.9rem);
-    line-height: 1.6;
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(0.75rem, 1.5vw, 1rem);
-    padding: 0 clamp(3%, 4%, 5%);
-  }
-
-  .expertise-item {
-    padding: clamp(0.75rem, 1.5vw, 1rem);
-    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
-  }
-
-  .check-icon {
-    width: clamp(16px, 3vw, 18px);
-    height: clamp(16px, 3vw, 18px);
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    max-width: 100%;
-  }
-
-  .project-card-simple {
-    padding: clamp(1.25rem, 2vw, 1.5rem);
-  }
-
-  .project-card-simple h3 {
-    font-size: clamp(1rem, 2vw, 1.1rem);
-  }
-
-  .project-card-simple p {
-    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
-  }
-
-  .project-badge {
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
-    padding: clamp(0.3rem, 0.5vw, 0.4rem) clamp(0.5rem, 1vw, 0.6rem);
-  }
-
-  .know-more-btn {
-    font-size: clamp(0.75rem, 1.4vw, 0.85rem);
-    padding: clamp(0.5rem, 1vw, 0.6rem) clamp(0.75rem, 1.5vw, 0.9rem);
-  }
-
-  .certifications-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(1rem, 2vw, 1.25rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    max-width: 100%;
-    margin-bottom: clamp(1.5rem, 2vw, 2rem);
-  }
-
-  .cert-card {
-    padding: clamp(1rem, 1.8vw, 1.25rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-    text-align: center;
-  }
-
-  .cert-icon {
-    width: clamp(48px, 10vw, 56px);
-    height: clamp(48px, 10vw, 56px);
-    margin: 0 auto clamp(0.75rem, 1.2vw, 1rem);
-    flex-shrink: 0;
-  }
-
-  .cert-label {
-    font-size: clamp(0.6rem, 1.2vw, 0.65rem);
-    margin: clamp(0.5rem, 0.8vw, 0.7rem) 0 clamp(0.3rem, 0.5vw, 0.35rem);
-  }
-
-  .cert-card h3 {
-    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
-    margin-bottom: clamp(0.3rem, 0.5vw, 0.35rem);
-  }
-
-  .cert-description {
-    font-size: clamp(0.75rem, 1.3vw, 0.8rem);
-    margin-bottom: clamp(0.6rem, 1vw, 0.8rem);
-    flex-grow: 1;
-    line-height: 1.4;
-  }
-
-  .view-btn {
-    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
-    padding: clamp(0.4rem, 0.8vw, 0.5rem) clamp(0.6rem, 1.2vw, 0.8rem);
-  }
-
-  .micro-cert-badges {
-    flex-wrap: wrap;
-    gap: clamp(0.5rem, 1vw, 0.75rem);
-    padding: 0 clamp(3%, 4%, 5%);
-  }
-
-  .micro-badge {
-    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
-    padding: clamp(0.4rem, 0.8vw, 0.5rem) clamp(0.6rem, 1.2vw, 0.8rem);
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: clamp(1rem, 2vw, 1.25rem);
-    padding: clamp(1rem, 1.5vw, 1.25rem);
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .contact-card {
-    padding: clamp(0.75rem, 1.5vw, 1rem);
-    text-align: left;
-    flex-direction: row;
-    gap: clamp(0.6rem, 1.2vw, 0.75rem);
-  }
-
-  .contact-icon {
+  .contact-info-container {
     margin: 0;
-    min-width: clamp(32px, 6vw, 36px);
-    width: clamp(32px, 6vw, 36px);
-    height: clamp(32px, 6vw, 36px);
-    flex-shrink: 0;
   }
-
-  .contact-info h3 {
-    font-size: clamp(0.75rem, 1.3vw, 0.85rem);
-    margin-bottom: clamp(0.2rem, 0.4vw, 0.3rem);
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
   }
-
-  .contact-info a {
-    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
-    word-break: break-word;
+  .experience-sub-title {
+    font-size: 1.25rem;
   }
-
-  #contact {
-    padding: clamp(2.5rem, 4vw, 3.5rem) clamp(4%, 5%, 6%) clamp(1.5rem, 2.5vw, 2rem);
+  .logo {
+    font-size: 1.5rem;
   }
-
-  .micro-certifications {
-    padding: 0 clamp(3%, 4%, 5%);
-  }
-
-  .cert-section-title {
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-    margin-bottom: clamp(1rem, 2vw, 1.5rem);
-  }
-}
-
-
-/* =====================================================
-   EXTRA SMALL MOBILE (max-width: 400px)
-   ===================================================== */
-
-@media screen and (max-width: 400px) {
-  section {
-    padding: clamp(2rem, 3.5vw, 2.5rem) clamp(4%, 5%, 6%) clamp(1.25rem, 2.5vw, 1.75rem);
-    min-height: auto;
-  }
-
-  #profile {
-    padding: clamp(4rem, 4.5vw, 4.5rem) clamp(4%, 5%, 6%) clamp(1.25rem, 2.5vw, 1.75rem);
-    gap: clamp(1.25rem, 2.5vw, 1.5rem);
+  .nav-links {
     flex-direction: column;
-  }
-
-  #profile .section__text {
+    gap: 0.5rem;
     text-align: center;
-    width: 100%;
-    padding: 0;
   }
-
-  #profile .section__text__p1 {
-    font-size: clamp(0.8rem, 1.8vw, 0.9rem);
-  }
-
-  #profile .title {
-    font-size: clamp(1.6rem, 4vw, 1.9rem);
-    margin-bottom: clamp(0.2rem, 0.4vw, 0.3rem);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.15;
-  }
-
-  #profile .section__text__p2 {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-    margin-bottom: clamp(0.15rem, 0.3vw, 0.25rem);
-  }
-
-  #profile .section__text__specialties {
-    font-size: clamp(0.75rem, 1.6vw, 0.85rem);
-    margin: clamp(0.4rem, 0.8vw, 0.5rem) 0;
-  }
-
-  #profile .section__text__p3 {
-    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
-    margin: clamp(0.4rem, 0.8vw, 0.5rem) 0;
-  }
-
-  .profile-image-wrapper {
-    width: clamp(140px, 32vw, 160px);
-    height: clamp(140px, 32vw, 160px);
-    margin: 0 auto;
-    padding: 2px;
-  }
-
-  .badges-container {
-    gap: clamp(0.3rem, 0.8vw, 0.5rem);
-    margin-bottom: clamp(0.6rem, 1.2vw, 0.8rem);
-    padding: 0 clamp(2%, 3%, 4%);
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
     justify-content: center;
   }
-
-  .badge {
-    font-size: clamp(0.55rem, 1rem, 0.65rem);
-    padding: clamp(0.2rem, 0.4vw, 0.25rem) clamp(0.4rem, 0.8vw, 0.5rem);
+  .section__text__p2 {
+    font-size: 1.25rem;
   }
-
-  .btn-container {
-    gap: clamp(0.4rem, 0.8vw, 0.6rem);
-    margin-bottom: clamp(0.75rem, 1.2vw, 1rem);
-    padding: 0 clamp(2%, 3%, 4%);
-  }
-
-  .btn {
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
-    padding: clamp(0.5rem, 0.8vw, 0.6rem) clamp(0.65rem, 1.2vw, 0.75rem);
-  }
-
-  #socials-container {
-    gap: clamp(0.4rem, 0.8vw, 0.6rem);
-    margin-top: clamp(0.5rem, 1vw, 0.75rem);
-  }
-
-  .social-icon {
-    width: clamp(36px, 8vw, 40px);
-    height: clamp(36px, 8vw, 40px);
-  }
-
-  .about-cards {
-    grid-template-columns: 1fr;
-    gap: clamp(0.8rem, 1.5vw, 1rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    margin: 0 auto clamp(1.25rem, 2vw, 1.5rem);
-  }
-
-  .about-card {
-    padding: clamp(0.8rem, 1.5vw, 1rem);
-  }
-
-  .about-card h3 {
-    font-size: clamp(0.85rem, 1.6vw, 0.95rem);
-  }
-
-  .about-card p {
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
-  }
-
-  .card-icon {
-    margin: 0 auto clamp(0.5rem, 0.8vw, 0.6rem);
-    width: clamp(24px, 4vw, 28px);
-    height: clamp(24px, 4vw, 28px);
-  }
-
-  .about-text {
-    padding: clamp(0.8rem, 1.5vw, 1rem);
-    font-size: clamp(0.75rem, 1.3vw, 0.8rem);
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(0.6rem, 1.2vw, 0.8rem);
-    padding: 0 clamp(3%, 4%, 5%);
-  }
-
-  .expertise-item {
-    padding: clamp(0.6rem, 1vw, 0.75rem);
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
-  }
-
-  .check-icon {
-    width: clamp(14px, 2.5vw, 16px);
-    height: clamp(14px, 2.5vw, 16px);
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(0.8rem, 1.5vw, 1rem);
-    padding: 0 clamp(3%, 4%, 5%);
-  }
-
-  .project-card-simple {
-    padding: clamp(1rem, 1.5vw, 1.25rem);
-  }
-
-  .project-card-simple h3 {
-    font-size: clamp(0.9rem, 1.6vw, 1rem);
-  }
-
-  .project-card-simple p {
-    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
-  }
-
-  .project-badge {
-    font-size: clamp(0.6rem, 1rem, 0.7rem);
-    padding: clamp(0.25rem, 0.4vw, 0.3rem) clamp(0.4rem, 0.8vw, 0.5rem);
-  }
-
-  .know-more-btn {
-    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
-    padding: clamp(0.4rem, 0.7vw, 0.5rem) clamp(0.6rem, 1vw, 0.75rem);
-  }
-
-  .certifications-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(0.8rem, 1.5vw, 1rem);
-    padding: 0 clamp(3%, 4%, 5%);
-    margin-bottom: clamp(1rem, 1.5vw, 1.25rem);
-  }
-
-  .cert-card {
-    padding: clamp(0.85rem, 1.5vw, 1rem);
-  }
-
-  .cert-icon {
-    width: clamp(44px, 9vw, 50px);
-    height: clamp(44px, 9vw, 50px);
-    margin: 0 auto clamp(0.6rem, 1vw, 0.8rem);
-  }
-
-  .cert-label {
-    font-size: clamp(0.55rem, 1vw, 0.6rem);
-    margin: clamp(0.4rem, 0.6vw, 0.5rem) 0 clamp(0.25rem, 0.4vw, 0.3rem);
-  }
-
-  .cert-card h3 {
-    font-size: clamp(0.9rem, 1.6vw, 1rem);
-  }
-
-  .cert-description {
-    font-size: clamp(0.7rem, 1.2vw, 0.75rem);
-    margin-bottom: clamp(0.5rem, 0.8vw, 0.6rem);
-  }
-
-  .view-btn {
-    font-size: clamp(0.65rem, 1rem, 0.75rem);
-    padding: clamp(0.35rem, 0.6vw, 0.4rem) clamp(0.55rem, 1vw, 0.65rem);
-  }
-
-  .micro-certifications {
-    padding: 0 clamp(3%, 4%, 5%);
-  }
-
-  .micro-cert-badges {
-    gap: clamp(0.4rem, 0.8vw, 0.6rem);
-    padding: 0 clamp(2%, 3%, 4%);
-  }
-
-  .micro-badge {
-    font-size: clamp(0.6rem, 1rem, 0.7rem);
-    padding: clamp(0.3rem, 0.6vw, 0.4rem) clamp(0.5rem, 1vw, 0.6rem);
-  }
-
-  #contact {
-    padding: clamp(2rem, 3.5vw, 2.5rem) clamp(4%, 5%, 6%) clamp(1.25rem, 2vw, 1.5rem);
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: clamp(0.8rem, 1.5vw, 1rem);
-    padding: clamp(0.75rem, 1.2vw, 1rem);
-  }
-
-  .contact-card {
-    padding: clamp(0.6rem, 1vw, 0.75rem);
-    gap: clamp(0.5rem, 0.8vw, 0.6rem);
-  }
-
-  .contact-icon {
-    width: clamp(28px, 5vw, 32px);
-    height: clamp(28px, 5vw, 32px);
-    min-width: clamp(28px, 5vw, 32px);
-    flex-shrink: 0;
-  }
-
-  .contact-info h3 {
-    font-size: clamp(0.65rem, 1.1vw, 0.75rem);
-  }
-
-  .contact-info a {
-    font-size: clamp(0.6rem, 1vw, 0.7rem);
-    word-break: break-word;
-  }
-
-  .cert-section-title {
-    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
-    margin-bottom: clamp(0.8rem, 1.5vw, 1rem);
-  }
-}
-
-/* =====================================================
-   LARGE SCREENS (min-width: 1600px)
-   ===================================================== */
-
-@media screen and (min-width: 1600px) {
-  section {
-    padding: 8rem 10%;
-  }
-
-  #profile {
-    gap: 6rem;
-  }
-
-  .profile-image-wrapper {
-    width: 320px;
-    height: 320px;
-  }
-
-  #profile .title {
-    font-size: 4.5rem;
-  }
-
-  .about-cards {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1400px;
-    margin: 0 auto 3rem;
-  }
-
-  .about-text {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .skills-grid {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .projects-grid {
-    max-width: 1400px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .certifications-grid {
-    max-width: 1400px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .contact-container {
-    max-width: 1200px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* =====================================================
-   REDUCED MOTION
-   ===================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-
-  html {
-    scroll-behavior: auto;
-  }
-
-  .profile-image-wrapper {
-    animation: none;
-  }
-}
-
-/* =====================================================
-   HIGH CONTRAST MODE
-   ===================================================== */
-
-@media (prefers-contrast: high) {
-  :root {
-    --primary: hsl(160, 60%, 55%);
-    --border: hsl(195, 20%, 30%);
-  }
-
-  .skill-tag,
-  .project-badge {
-    border-width: 2px;
-  }
-
-  a:focus,
-  button:focus {
-    outline: 3px solid var(--primary);
-    outline-offset: 2px;
-  }
-}
-
-/* =====================================================
-   PRINT STYLES
-   ===================================================== */
-
-@media print {
-  #desktop-nav,
-  #hamburger-nav,
-  .hero-glow,
-  #socials-container,
-  .btn-container {
-    display: none !important;
-  }
-
-  body {
-    background: white;
-    color: black;
-  }
-
-  section {
-    page-break-inside: avoid;
-    padding: 1rem 0;
-    min-height: auto;
-  }
-
   .title {
-    color: black !important;
-    -webkit-text-fill-color: black !important;
+    font-size: 2rem;
   }
-
-  a {
-    color: black;
-  }
-
-  .project-card,
-  .cert-card,
-  .about-card,
-  .contact-card,
-  .skill-category {
-    background: white;
-    border: 1px solid #ccc;
-    box-shadow: none;
-  }
-
-  .message-form {
-    min-height: auto;
+  .text-container {
+    text-align: justify;
   }
 }
 
-/* =====================================================
-   MESSAGE FORM RESPONSIVE
-   ===================================================== */
-
-@media screen and (max-width: 768px) {
-  .form-wrapper {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+@media screen and (max-width: 1400px) {
+  .flip-card {
+    height: 250px;
   }
-
-  .message-form {
-    padding: 2rem;
-    min-height: auto;
-  }
-
-  .message-title {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .form-textarea {
-    min-height: 200px;
-  }
-
-  .form-footer {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
-  }
-
-  .form-footer .btn {
-    width: 100%;
-  }
-
-  .form-status {
-    text-align: center;
+  .flip-card-inner {
+    height: 250px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .form-group label {
-    font-size: 0.85rem;
+@media screen and (max-width: 1200px) {
+  .flip-card {
+    height: 200px;
   }
+  .flip-card-inner {
+    height: 200px;
+  }
+}
 
-  .form-input,
-  .form-textarea {
-    padding: 0.75rem;
+@media screen and (max-width: 600px) {
+  .flip-card {
+    height: 150px;
+  }
+  .flip-card-inner {
+    height: 150px;
+  }
+  .flip-card-back p {
     font-size: 0.9rem;
-  }
-
-  .message-title {
-    font-size: 1.2rem;
-  }
-
-  .form-textarea {
-    min-height: 150px;
   }
 }
