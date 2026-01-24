@@ -56,7 +56,12 @@
 
 @media screen and (max-width: 600px) {
   section {
-    padding: 2.5rem 5% 2rem !important;
+    padding: 2rem 5% 1.5rem !important;
+  }
+  #about,
+  #certifications,
+  #experience {
+    padding: 2rem 5% 1.5rem !important;
   }
   #contact,
   footer {
@@ -67,6 +72,51 @@
     margin-bottom: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  /* About Cards - Stack on mobile */
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .about-card {
+    padding: 1.5rem;
+  }
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  .about-text {
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+  /* Certifications Grid - Stack on mobile */
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .certifications-grid.awards-grid {
+    grid-template-columns: 1fr;
+  }
+  .certifications-grid.awards-grid .cert-card:nth-child(4),
+  .certifications-grid.awards-grid .cert-card:nth-child(5) {
+    grid-column: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cert-card {
+    padding: 1.5rem 1rem;
+  }
+  .cert-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  .micro-certifications {
+    margin: 2rem auto 0;
+    padding: 1.5rem;
   }
   article {
     font-size: 1rem;
