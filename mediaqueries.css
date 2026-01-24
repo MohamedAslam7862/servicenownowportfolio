@@ -67,6 +67,14 @@
     padding: 2rem 0 1.5rem !important;
     margin: 0 !important;
   }
+  #profile .section__text {
+    padding: 0 5%;
+    text-align: left;
+  }
+  #profile .section__text__p1,
+  #profile .title {
+    text-align: left;
+  }
   #about > *,
   #certifications > *,
   #experience > *,
