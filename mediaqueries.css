@@ -23,7 +23,11 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
+  #profile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
   .section-container {
     display: block;
   }
@@ -55,8 +59,9 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: fit-content;
     margin-bottom: 0;
+    padding-top: 1.5rem;
   }
   article {
     font-size: 1rem;
