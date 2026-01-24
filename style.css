@@ -271,10 +271,7 @@ section {
   gap: 4rem;
   padding-top: 8rem;
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('asset/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
+  background: var(--background);
 }
 
 .hero-glow {
@@ -298,14 +295,21 @@ section {
   border-radius: 50%;
   padding: 4px;
   background: var(--gradient-primary);
-  box-shadow: var(--shadow-glow);
-  animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
   transition: all 0.3s ease;
   position: relative;
 }
 
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px hsla(160, 40%, 50%, 0.3), 0 0 40px hsla(160, 40%, 50%, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 40px hsla(160, 40%, 50%, 0.8), 0 0 80px hsla(160, 40%, 50%, 0.5), 0 0 120px hsla(160, 40%, 50%, 0.3);
+  }
+}
+
 .profile-image-wrapper:hover {
-  box-shadow: 0 0 40px hsla(160, 40%, 50%, 0.8), 0 0 80px hsla(160, 40%, 50%, 0.5), 0 0 120px hsla(160, 40%, 50%, 0.3);
   transform: scale(1.05);
 }
 
