@@ -1251,24 +1251,24 @@ section {
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   max-width: 900px;
   margin: 0 auto;
   background: hsla(195, 25%, 15%, 0.4);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .contact-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
   background: transparent;
   border: none;
   border-radius: 0;
-  padding: 0;
+  padding: 0.5rem 0;
   transition: all 0.3s ease;
   text-align: left;
 }
@@ -1295,7 +1295,7 @@ section {
   font-size: 0.9rem;
   color: var(--muted-foreground);
   font-weight: 500;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
   text-transform: capitalize;
 }
 
@@ -1457,30 +1457,45 @@ textarea {
    ===================================================== */
 
 footer {
-  background: var(--servicenow-dark);
+  background: hsl(195, 25%, 8%);
   border-top: 1px solid var(--border);
-  padding: clamp(1.5rem, 2.5vw, 2rem) clamp(4%, 5%, 6%);
+  padding: 2rem 5%;
+  margin-top: 3rem;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .footer-nav {
-  margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
+  margin-bottom: 0;
 }
 
 .footer-nav .nav-links {
   justify-content: center;
   flex-wrap: wrap;
-  gap: clamp(1rem, 1.5vw, 1.5rem);
+  gap: 1.5rem;
+  list-style: none;
+  display: flex;
+}
+
+.footer-nav .nav-links li {
+  list-style: none;
 }
 
 .footer-nav .nav-links a {
   color: var(--muted-foreground);
-  font-size: clamp(0.8rem, 1.4vw, 0.9rem);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  letter-spacing: 0.3px;
 }
 
 .footer-nav .nav-links a:hover {
@@ -1489,8 +1504,10 @@ footer {
 
 .copyright {
   color: var(--muted-foreground);
-  font-size: clamp(0.7rem, 1.3vw, 0.85rem);
+  font-size: 0.7rem;
   line-height: 1.5;
+  letter-spacing: 0.2px;
+  margin-top: 0;
 }
 
 /* =====================================================
