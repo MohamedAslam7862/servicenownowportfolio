@@ -591,8 +591,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 3rem;
+  width: 100%;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -606,10 +609,12 @@ section {
   background: var(--gradient-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
-  max-width: 400px;
+  max-width: 550px;
   transition: all 0.3s ease;
+  min-width: 250px;
+  text-align: left;
 }
 
 .company-card:hover {
@@ -636,7 +641,7 @@ section {
 }
 
 .company-period {
-  color: var(--primary);
+  color: var(--muted-foreground);
   font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
@@ -645,12 +650,12 @@ section {
 .company-name {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--foreground);
+  color: var(--primary);
   margin-bottom: 0.25rem;
 }
 
 .company-role {
-  color: var(--muted-foreground);
+  color: var(--foreground);
   font-size: 0.95rem;
 }
 
