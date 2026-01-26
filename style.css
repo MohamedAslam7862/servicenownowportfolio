@@ -641,7 +641,7 @@ section {
 }
 
 .company-period {
-  color: var(--muted-foreground);
+  color: var(--primary);
   font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
@@ -650,12 +650,12 @@ section {
 .company-name {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--foreground);
   margin-bottom: 0.25rem;
 }
 
 .company-role {
-  color: var(--foreground);
+  color: var(--muted-foreground);
   font-size: 0.95rem;
 }
 
